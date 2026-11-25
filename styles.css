@@ -1342,3 +1342,9 @@ body {
     font-size: 23px;
     color: #141414
 }
+
+.footer .brand-light img {
+    width: 283px;
+    filter: none;
+    opacity: 1
+}
