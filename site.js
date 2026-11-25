@@ -56,3 +56,27 @@ if (lightbox) {
     if (event.key === 'Escape') closeLightbox();
   });
 }
+
+const lazySections = document.querySelectorAll('main > section, footer');
+if (lazySections.length) {
+  if ('IntersectionObserver' in window) {
+    const sectionObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
+
+    lazySections.forEach((section, index) => {
+      if (index === 0) {
+        section.classList.add('is-visible');
+        return;
+      }
+      section.classList.add('lazy-section');
+      sectionObserver.observe(section);
+    });
+  } else {
+    lazySections.forEach((section) => section.classList.add('is-visible'));
+  }
+}
