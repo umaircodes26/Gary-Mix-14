@@ -1,24 +1,24 @@
 /* Styles for the FAQ, Our Approach, R&D, Material Testing and Talk to an Engineer pages. */
 .top-icon{display:inline-block;vertical-align:-2px;margin-right:6px}
 .btn-arrow{width:11px;height:11px;display:inline-block}
-.page-banner{position:relative;height:284px;background:#141618;color:#fff;overflow:hidden;display:flex;align-items:center}
-.page-banner-bg{position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,18,20,.62),rgba(16,18,20,.58)),url('images/Rectangle 33761.png') center/cover no-repeat}
+.page-banner{position:relative;height:420px;background:#141618;color:#fff;overflow:hidden;display:flex;align-items:center}
+.page-banner-bg{position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,18,20,.67),rgba(16,18,20,.67)),url('images/Rectangle 33761.png') center 55%/cover no-repeat}
 .page-banner-content{position:relative;text-align:center}
-.page-banner-content h1{margin:0 0 12px;font-size:48px;font-weight:700;letter-spacing:-1.8px;line-height:1.15}
-.breadcrumb{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:500}
-.breadcrumb a{color:#e5e5e5}
-.breadcrumb a:hover{color:#fff}
-.breadcrumb span[aria-hidden="true"]{color:#888;font-size:12px}
+.page-banner-content h1{margin:0 0 22px;font-size:60px;font-weight:700;letter-spacing:-2px;line-height:1.1}
+.breadcrumb{display:inline-flex;align-items:center;gap:14px;font-size:21px;font-weight:500}
+.breadcrumb a{color:#fff}
+.breadcrumb a:hover{color:var(--red)}
+.breadcrumb span[aria-hidden="true"]{color:var(--red);font-size:21px}
 .breadcrumb .current{color:var(--red)}
-.enquiry-intro{background:#fff;padding:96px 0}
-.enquiry-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
-.enquiry-photo img{display:block;width:100%;height:auto;object-fit:cover}
-.enquiry-copy .eyebrow{margin:0 0 18px}
-.enquiry-copy h2{margin:0 0 20px;font-size:40px;font-weight:700;letter-spacing:-1.6px;line-height:1.15;color:var(--ink)}
-.enquiry-copy p:not(.eyebrow){margin:0;color:#666;font-size:15px;line-height:1.85;max-width:470px}
-.contact-cards{padding:88px 0 100px}
-.contact-cards-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:36px;align-items:stretch}
-.contact-card{background:#fff;border:1px solid #e7e7e7;padding:44px 40px}
+.enquiry-intro{background:#fff;padding:110px 0}
+.enquiry-intro-grid{display:grid;grid-template-columns:minmax(0,560px) minmax(0,1fr);gap:60px;align-items:center}
+.enquiry-photo img{display:block;width:100%;height:410px;object-fit:cover}
+.enquiry-copy .eyebrow{margin:0 0 24px}
+.enquiry-copy h2{margin:0 0 22px;font-size:46px;font-weight:700;letter-spacing:-1.8px;line-height:1.15;color:var(--ink)}
+.enquiry-copy p:not(.eyebrow){margin:0;color:#555;font-size:16px;line-height:2;max-width:520px}
+.contact-cards{padding:96px 0 110px}
+.contact-cards-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px;align-items:stretch}
+.contact-card{background:#fff;border:1px solid #e3e3e3;padding:46px 44px}
 .card-eyebrow{margin:0 0 10px;color:var(--red);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
 .contact-card h2{margin:0 0 28px;font-size:30px;font-weight:700;letter-spacing:-1.1px;line-height:1.2;color:var(--ink)}
 .direct-item{padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid #ececec}
@@ -32,14 +32,19 @@
 .enquiry-form{display:grid;grid-template-columns:1fr 1fr;gap:22px 24px}
 .form-field label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:8px}
 .form-field .req{color:var(--red)}
-.form-field input,.form-field select{width:100%;height:48px;padding:0 14px;border:1px solid #e5e5e5;background:#fcfcfc;color:var(--ink);font:400 14px Inter,Arial,sans-serif;outline:none;transition:border-color .15s}
-.form-field input::placeholder{color:#b0b0b0}
-.form-field input:focus,.form-field select:focus{border-color:var(--red);background:#fff}
+.form-field-full{grid-column:1 / -1}
+.form-field input,.form-field select,.form-field textarea{width:100%;height:48px;padding:0 14px;border:1px solid #e5e5e5;background:#fcfcfc;color:var(--ink);font:400 14px 'Helvetica Local',Arial,sans-serif;outline:none;transition:border-color .15s}
+.form-field textarea{height:auto;min-height:118px;padding:14px;resize:vertical;line-height:1.6}
+.form-field input::placeholder,.form-field textarea::placeholder{color:#b0b0b0}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--red);background:#fff}
+.form-submit-wrap{padding-top:4px}
+.form-submit-wrap .button{height:54px;padding-inline:28px}
+.form-note{margin:22px 0 0;color:#555;font-size:13.5px;line-height:1.8}
 .select-wrap{position:relative}
 .select-wrap select{appearance:none;-webkit-appearance:none;padding-right:38px;cursor:pointer}
 .select-wrap:after{content:"";position:absolute;right:15px;top:50%;width:8px;height:8px;border-right:1.5px solid var(--red);border-bottom:1.5px solid var(--red);transform:translateY(-65%) rotate(45deg);pointer-events:none}
 @media(max-width:960px){.enquiry-intro-grid{grid-template-columns:1fr;gap:36px}.contact-cards-grid{grid-template-columns:1fr;gap:24px}}
-@media(max-width:760px){.page-banner{height:220px}.page-banner-content h1{font-size:34px;letter-spacing:-1px}.enquiry-intro{padding:60px 0}.enquiry-copy h2{font-size:32px}.contact-cards{padding:56px 0 68px}.contact-card{padding:30px 22px}.enquiry-form{grid-template-columns:1fr;gap:18px}}
+@media(max-width:760px){.page-banner{height:300px}.page-banner-content h1{font-size:42px;letter-spacing:-1.5px}.breadcrumb{font-size:16px}.enquiry-intro{padding:64px 0 70px}.enquiry-photo img{height:auto;aspect-ratio:1.35}.enquiry-copy h2{font-size:34px}.contact-cards{padding:64px 0 74px}.contact-card{padding:32px 24px}.enquiry-form{grid-template-columns:1fr;gap:18px}}
 
 .has-divider{padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid #ececec}
 .enquiry-copy h2.has-divider{margin-bottom:22px}

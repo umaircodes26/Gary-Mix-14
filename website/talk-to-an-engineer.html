@@ -21,7 +21,7 @@
         <h1>Talk to an engineer</h1>
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="index.html">Home</a>
-          <span aria-hidden="true">&gt;</span>
+          <span aria-hidden="true">•</span>
           <span class="current">Talk to an engineer</span>
         </nav>
       </div>
@@ -30,11 +30,11 @@
     <section class="enquiry-intro">
       <div class="wrap enquiry-intro-grid">
         <div class="enquiry-photo">
-          <img src="images/talk-to-an-engineer.png" alt="Mix14 engineer discussing material test samples with a client">
+          <img loading="lazy" decoding="async" src="images/talk-to-an-engineer.png" alt="Mix14 engineer discussing material test samples with a client">
         </div>
         <div class="enquiry-copy">
           <p class="eyebrow"><span></span>TECHNICAL ENQUIRY</p>
-          <h2>Talk to an engineer.</h2>
+          <h2 class="has-divider">Talk to an engineer.</h2>
           <p>Tell us a little about the material, test requirement or challenge. Mix14 can follow up to discuss capability, sample needs and timing.</p>
         </div>
       </div>
@@ -58,7 +58,7 @@
 
           <p class="direct-note">When available, include the required standard and revision, sample details, and target date. Mix14 will confirm scope and expected timing with you.</p>
 
-          <a class="direct-link" href="index.html#approach">How Our Approach Works <span aria-hidden="true">↗</span></a>
+          <a class="direct-link" href="index.html#approach">How Our Approach Works <span><i class="fa-solid fa-arrow-right arrow-diag" aria-hidden="true"></i></span></a>
         </div>
 
         <div class="contact-card form-card">
@@ -102,6 +102,38 @@
               <label for="standard-revision">Standard / revision</label>
               <input type="text" id="standard-revision" name="standard" placeholder="If known">
             </div>
+
+            <div class="form-field form-field-full">
+              <label for="material-details">Material, sample quantity and dimensions</label>
+              <input type="text" id="material-details" name="material" placeholder="For e.g. material type, number of sample, size">
+            </div>
+
+            <div class="form-field">
+              <label for="target-timing">Target timing</label>
+              <input type="text" id="target-timing" name="timing" placeholder="Optional">
+            </div>
+
+            <div class="form-field">
+              <label for="what-need">What do you need?</label>
+              <div class="select-wrap">
+                <select id="what-need" name="need">
+                  <option value="Discuss test scope" selected>Discuss test scope</option>
+                  <option value="Request a quote">Request a quote</option>
+                  <option value="Book witnessing">Book witnessing</option>
+                  <option value="R&amp;D support">R&amp;D support</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field form-field-full">
+              <label for="brief-description">Brief Description <span class="req">*</span></label>
+              <textarea id="brief-description" name="description" rows="4" required placeholder="What are you testing and what would you like to find out?"></textarea>
+            </div>
+
+            <div class="form-field form-field-full form-submit-wrap">
+              <button type="submit" class="button button-red">PREPARE EMAIL ENQUIRY <span><i class="fa-solid fa-arrow-right arrow-diag" aria-hidden="true"></i></span></button>
+              <p class="form-note">This form opens your email application with the enquiry details filled in. Review and send it there. Attachments are not included automatically.</p>
+            </div>
           </form>
         </div>
       </div>
@@ -111,5 +143,28 @@
   <div id="site-footer"></div>
 
   <script src="site.js"></script>
+  <script>
+    const engineerForm = document.querySelector('.enquiry-form');
+    if (engineerForm) {
+      engineerForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const data = new FormData(engineerForm);
+        const subject = encodeURIComponent(`Mix14 Technical Enquiry - ${data.get('standard') || data.get('need') || 'General'}`);
+        const body = encodeURIComponent(
+          `Name: ${data.get('name') || ''}\n` +
+          `Company: ${data.get('company') || ''}\n` +
+          `Work Email: ${data.get('email') || ''}\n` +
+          `Telephone: ${data.get('telephone') || ''}\n` +
+          `Enquiry Type: ${data.get('enquiry_type') || ''}\n` +
+          `Standard / Revision: ${data.get('standard') || ''}\n` +
+          `Material / Quantity / Dimensions: ${data.get('material') || ''}\n` +
+          `Target Timing: ${data.get('timing') || ''}\n` +
+          `What do you need?: ${data.get('need') || ''}\n\n` +
+          `Brief Description:\n${data.get('description') || ''}`
+        );
+        window.location.href = `mailto:gary@mix14.co.uk?subject=${subject}&body=${body}`;
+      });
+    }
+  </script>
 </body>
 </html>

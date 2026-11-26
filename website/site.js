@@ -126,6 +126,14 @@ function configureHeaderLinks(container) {
     targetNav = container.querySelector('[data-nav="home"]');
   } else if (testingPages.has(page)) {
     targetNav = container.querySelector('[data-nav="testing"]');
+  } else if (page === 'research-and-development.html') {
+    targetNav = container.querySelector('.main-nav a[href$="#research"]');
+  } else if (page === 'our-approach.html') {
+    targetNav = container.querySelector('.main-nav a[href$="#approach"]');
+  } else if (page === 'faqs.html') {
+    targetNav = container.querySelector('.main-nav a[href$="#faqs"]');
+  } else if (page === 'contact.html' || page === 'talk-to-an-engineer.html') {
+    targetNav = container.querySelector('.main-nav a[href="contact.html"]');
   } else {
     targetNav = navLinks.find((link) => (link.getAttribute('href') || '').toLowerCase() === page);
   }
