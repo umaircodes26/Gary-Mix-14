@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --red: #f52245;
     --ink: #141414;
     --green: #164d43;
@@ -32,60 +32,6 @@ a {
 .wrap {
     width: min(var(--max), calc(100% - 64px));
     margin-inline: auto
-}
-
-.topline {
-    height: 42px;
-    background: #2b2b2b;
-    color: #eee;
-    font-size: 12px;
-    letter-spacing: .02em
-}
-
-.top-inner,
-.top-contact {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-}
-
-.topline b {
-    color: var(--red);
-    font-weight: 500
-}
-
-.top-contact {
-    gap: 18px
-}
-
-.top-contact i {
-    font-style: normal;
-    color: var(--red);
-    font-size: 15px;
-    margin-right: 6px
-}
-
-.dot {
-    color: #777
-}
-
-.site-header {
-    height: 118px;
-    background: white;
-    position: relative;
-    z-index: 5
-}
-
-.nav-wrap {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-}
-
-.brand {
-    display: inline-block
 }
 
 .mix-mark {
@@ -123,24 +69,6 @@ a {
     right: 0;
     top: -19px;
     color: #242424
-}
-
-.main-nav {
-    display: flex;
-    align-items: center;
-    gap: 42px;
-    color: #24483f;
-    font-weight: 500
-}
-
-.main-nav>a:not(.button):hover,
-.main-nav .active {
-    color: var(--red)
-}
-
-.main-nav .active:before {
-    content: "·";
-    padding-right: 7px
 }
 
 .button {
@@ -185,18 +113,6 @@ a {
     color: #171717
 }
 
-.nav-cta {
-    height: 54px;
-    padding-inline: 24px
-}
-
-.menu-toggle {
-    display: none;
-    background: none;
-    border: 0;
-    font-size: 26px
-}
-
 .hero {
     height: 650px;
     position: relative;
@@ -208,7 +124,7 @@ a {
 .hero-image {
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, rgba(14, 15, 16, .94) 0%, rgba(15, 16, 17, .84) 35%, rgba(15, 16, 17, .16) 63%, rgba(15, 16, 17, .05) 100%), url('Rectangle 33770.png') center 47%/cover no-repeat
+    background: linear-gradient(90deg, rgba(14, 15, 16, .94) 0%, rgba(15, 16, 17, .84) 35%, rgba(15, 16, 17, .16) 63%, rgba(15, 16, 17, .05) 100%), url('images/Rectangle 33770.png') center 47%/cover no-repeat
 }
 
 .hero-content {
@@ -819,146 +735,6 @@ a {
     object-fit: contain
 }
 
-.contact-band {
-    background: linear-gradient(110deg, #ff3455, #ed1738);
-    color: white;
-    padding: 54px 0
-}
-
-.contact-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px
-}
-
-.contact-band h2 {
-    font-size: 38px;
-    letter-spacing: -1.5px;
-    line-height: 1.2;
-    margin: 0 0 22px
-}
-
-.contact-band p {
-    margin: 0;
-    color: #ffe3e7
-}
-
-.contact-actions {
-    display: flex;
-    gap: 12px
-}
-
-.button-dark {
-    background: #141414;
-    color: white
-}
-
-.button-outline-dark {
-    border-color: #161616;
-    color: #141414
-}
-
-.button-outline-dark:hover,
-.button-outline-dark:focus-visible {
-    background: #141414;
-    border-color: #141414;
-    color: white
-}
-
-.footer {
-    background: #141414;
-    color: #bbb;
-    padding: 82px 0 24px
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: 1.4fr .65fr .95fr 1.1fr;
-    gap: 60px;
-    padding-bottom: 80px
-}
-
-.brand-light .mix-mark {
-    color: #eee
-}
-
-.brand-light .mix-mark sup {
-    color: #777
-}
-
-.footer-about>p {
-    max-width: 300px;
-    margin: 30px 0 25px;
-    line-height: 2
-}
-
-.footer h3 {
-    color: white;
-    font-size: 21px;
-    margin: 0 0 18px
-}
-
-.footer-grid>div:not(:first-child)>a {
-    display: block;
-    margin: 7px 0
-}
-
-.footer-grid a:hover {
-    color: white
-}
-
-.socials {
-    display: flex;
-    gap: 11px
-}
-
-.socials a {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: #2b2b2b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: 700;
-    font-size: 18px;
-    transition: background .2s ease
-}
-
-.socials a:hover,
-.socials a:focus-visible {
-    background: var(--red)
-}
-
-.footer-contact p {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    margin: 0 0 13px;
-    line-height: 1.8
-}
-
-.footer-contact img {
-    width: 43px;
-    height: 43px;
-    object-fit: contain;
-    flex: none
-}
-
-.copyright {
-    border-top: 1px solid #333;
-    text-align: center;
-    padding-top: 22px;
-    color: #ddd;
-    font-size: 13px
-}
-
-.copyright b {
-    color: var(--red)
-}
-
 .lightbox {
     position: fixed;
     inset: 0;
@@ -991,13 +767,7 @@ a {
     cursor: pointer
 }
 
-url(c:/Users/umair/Downloads/helvetica-255.7z)@media(max-width:1050px) {
-    .main-nav {
-        gap: 20px
-    }
-    .nav-cta {
-        padding-inline: 14px
-    }
+@media(max-width:1050px) {
     .service-grid {
         gap: 20px
     }
@@ -1011,66 +781,11 @@ url(c:/Users/umair/Downloads/helvetica-255.7z)@media(max-width:1050px) {
     .why-grid {
         gap: 38px
     }
-    .footer-grid {
-        gap: 30px
-    }
 }
 
 @media(max-width:760px) {
     .wrap {
         width: min(100% - 36px, var(--max))
-    }
-    .topline {
-        height: auto;
-        min-height: 38px
-    }
-    .top-inner {
-        justify-content: center
-    }
-    .top-inner>span {
-        font-size: 9px
-    }
-    .top-contact {
-        display: none
-    }
-    .site-header {
-        height: 78px
-    }
-    .menu-toggle {
-        display: block
-    }
-    .brand .mix-mark {
-        font-size: 32px
-    }
-    .brand .mix-mark sup {
-        font-size: 28px;
-        top: -14px
-    }
-    .main-nav {
-        display: none;
-        position: absolute;
-        top: 78px;
-        left: 0;
-        right: 0;
-        background: white;
-        box-shadow: 0 15px 20px #0002;
-        padding: 18px;
-        align-items: stretch;
-        flex-direction: column;
-        gap: 0
-    }
-    .main-nav.open {
-        display: flex
-    }
-    .main-nav>a:not(.button) {
-        padding: 11px 5px;
-        border-bottom: 1px solid #eee
-    }
-    .main-nav .active:before {
-        content: none
-    }
-    .main-nav .nav-cta {
-        margin-top: 12px
     }
     .hero {
         height: auto;
@@ -1078,7 +793,7 @@ url(c:/Users/umair/Downloads/helvetica-255.7z)@media(max-width:1050px) {
     }
     .hero-image {
         background-position: 58% center;
-        background-image: linear-gradient(90deg, rgba(14, 15, 16, .92), rgba(15, 16, 17, .63)), url('Rectangle 33770.png')
+        background-image: linear-gradient(90deg, rgba(14, 15, 16, .92), rgba(15, 16, 17, .63)), url('images/Rectangle 33770.png')
     }
     .hero-content {
         padding-top: 90px;
@@ -1215,42 +930,6 @@ url(c:/Users/umair/Downloads/helvetica-255.7z)@media(max-width:1050px) {
         width: 75%;
         max-height: 55px
     }
-    .contact-inner {
-        align-items: flex-start;
-        flex-direction: column
-    }
-    .contact-band h2 {
-        font-size: 33px
-    }
-    .contact-actions {
-        flex-wrap: wrap
-    }
-    .footer {
-        padding-top: 58px
-    }
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 34px 20px;
-        padding-bottom: 45px
-    }
-    .footer-about {
-        grid-column: 1/-1
-    }
-    .footer-about>p {
-        margin-top: 20px
-    }
-    .footer h3 {
-        font-size: 18px
-    }
-    .footer-contact {
-        grid-column: 1/-1
-    }
-    .footer-contact p {
-        font-size: 13px
-    }
-    .copyright {
-        font-size: 11px
-    }
     .lightbox {
         padding: 20px
     }
@@ -1271,54 +950,6 @@ url(c:/Users/umair/Downloads/helvetica-255.7z)@media(max-width:1050px) {
     .steps {
         grid-template-columns: 1fr
     }
-    .contact-actions .button {
-        width: 100%
-    }
-    .contact-actions {
-        width: 100%
-    }
-    .footer-grid {
-        grid-template-columns: 1fr
-    }
-    .footer-about,
-    .footer-contact {
-        grid-column: auto
-    }
-}
-
-.brand {
-    display: inline-block;
-    line-height: 0
-}
-
-.brand img {
-    display: block;
-    width: 220px;
-    height: auto
-}
-
-.brand-light img {
-    filter: grayscale(1) brightness(0) invert(1);
-    opacity: .8
-}
-
-@media(max-width:760px) {
-    .brand img {
-        width: 175px
-    }
-}
-
-
-/* Reuse these classes on every page for the shared site chrome. */
-
-.shared-header {
-    position: relative;
-    z-index: 5
-}
-
-.shared-footer {
-    background: #141414;
-    color: #bbb
 }
 
 @font-face {
@@ -1361,32 +992,8 @@ body {
     font-family: 'Helvetica Local', Arial, sans-serif
 }
 
-.footer-contact p>i {
-    width: 43px;
-    height: 43px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: none;
-    border-radius: 50%;
-    background: var(--red);
-    color: #141414;
-    font-size: 16px
-}
-
 .gallery-grid button span .fa-plus {
     color: var(--red)
-}
-
-.menu-toggle .fa-bars {
-    font-size: 23px;
-    color: #141414
-}
-
-.footer .brand-light img {
-    width: 283px;
-    filter: none;
-    opacity: 1
 }
 
 .lazy-section {
