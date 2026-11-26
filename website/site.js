@@ -19,8 +19,8 @@ const HEADER_FALLBACK = `
       <a href="index.html#research">R&amp;D</a>
       <a href="index.html#approach">Our Approach</a>
       <a href="index.html#faqs">FAQ’s</a>
-      <a href="index.html#contact">Contact</a>
-      <a class="button button-red nav-cta" href="#contact">TALK TO AN ENGINEER <span><i class="fa-solid fa-arrow-right arrow-diag" aria-hidden="true"></i></span></a>
+      <a href="contact.html">Contact</a>
+      <a class="button button-red nav-cta" href="contact.html">TALK TO AN ENGINEER <span><i class="fa-solid fa-arrow-right arrow-diag" aria-hidden="true"></i></span></a>
     </nav>
   </div>
 </header>`;
@@ -55,7 +55,7 @@ const FOOTER_FALLBACK = `
         <a href="index.html#home">Home</a>
         <a href="testing.html">Testing</a>
         <a href="index.html#faqs">FAQ’s</a>
-        <a href="#contact">Contact</a>
+        <a href="contact.html">Contact</a>
         <a href="#">Policies</a>
       </div>
       <div>
@@ -117,7 +117,7 @@ function configureHeaderLinks(container) {
     'seat-cushion-oil-burner.html',
     'smoke-emissions.html',
   ]);
-  const navLinks = [...container.querySelectorAll('.main-nav a')];
+  const navLinks = [...container.querySelectorAll('.main-nav a:not(.button)')];
 
   navLinks.forEach((link) => link.classList.remove('active'));
   let targetNav = null;

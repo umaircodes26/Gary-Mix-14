@@ -30,6 +30,11 @@
     gap: 12px
 }
 
+.contact-actions .button i,
+.contact-actions .button .arrow-diag {
+    font-size: 16px
+}
+
 .button-dark {
     background: #141414;
     color: white
@@ -99,8 +104,8 @@
 }
 
 .socials a {
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     background: #2b2b2b;
     display: flex;
@@ -108,7 +113,7 @@
     justify-content: center;
     color: white;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     transition: background .2s ease
 }
 
@@ -126,8 +131,8 @@
 }
 
 .footer-contact p>i {
-    width: 43px;
-    height: 43px;
+    width: 46px;
+    height: 46px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,7 +140,7 @@
     border-radius: 50%;
     background: var(--red);
     color: #141414;
-    font-size: 16px
+    font-size: 18px
 }
 
 .footer-contact img {

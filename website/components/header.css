@@ -28,7 +28,7 @@
 .top-contact i {
     font-style: normal;
     color: var(--red);
-    font-size: 15px;
+    font-size: 17px;
     margin-right: 6px
 }
 
@@ -85,6 +85,10 @@
     padding-inline: 24px
 }
 
+.nav-cta .arrow-diag {
+    font-size: 16px
+}
+
 .menu-toggle {
     display: none;
     background: none;
@@ -94,7 +98,7 @@
 }
 
 .menu-toggle .fa-bars {
-    font-size: 23px;
+    font-size: 26px;
     color: #141414
 }
 
