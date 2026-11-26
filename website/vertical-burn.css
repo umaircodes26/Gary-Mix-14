@@ -7,7 +7,8 @@
 .detail-actions .button{height:60px;padding-inline:29px}
 .burn-criteria{background:#f7f7f7;padding:120px 0 115px}
 .burn-criteria-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}
-.criteria-card{position:relative;min-height:472px;background:#fff;border:1px solid #e1e1e1;padding:42px 49px 38px;display:flex;flex-direction:column;overflow:hidden}
+.criteria-card{position:relative;min-height:472px;background:#fff;border:1px solid #e1e1e1;border-top:2px solid #e1e1e1;padding:42px 49px 38px;display:flex;flex-direction:column;overflow:hidden;transition:border-color .2s,transform .2s,box-shadow .2s}
+.criteria-card:hover{border-top-color:var(--red);transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.06)}
 .criteria-card .criteria-heading{position:relative;z-index:1;display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
 .criteria-heading h2{font-size:40px;line-height:1.2;letter-spacing:-1.5px;margin:0 0 38px}
 .criteria-heading>i{font-size:48px;color:#c9c9c9;margin:8px 4px 0 0}

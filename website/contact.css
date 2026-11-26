@@ -96,9 +96,18 @@
 .contact-card {
     background: #fff;
     border: 1px solid #e3e3e3;
+    border-top: 2px solid #e3e3e3;
     padding: 46px 44px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    transition: border-color .2s, transform .2s, box-shadow .2s
+}
+
+.contact-card:hover,
+.contact-card:focus-within {
+    border-top-color: var(--red);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .06)
 }
 
 .contact-card-eyebrow {

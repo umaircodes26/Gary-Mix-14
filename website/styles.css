@@ -322,7 +322,15 @@ a {
 
 .service-card {
     background: white;
-    border: 1px solid #e7e7e7
+    border: 1px solid #e7e7e7;
+    border-top: 2px solid #e7e7e7;
+    transition: border-color .2s, transform .2s, box-shadow .2s
+}
+
+.service-card:hover {
+    border-top-color: var(--red);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .06)
 }
 
 .card-image {
@@ -566,7 +574,12 @@ a {
 .steps article {
     border-top: 2px solid #ddd;
     padding-top: 20px;
-    position: relative
+    position: relative;
+    transition: border-color .2s
+}
+
+.steps article:hover {
+    border-top-color: var(--red)
 }
 
 .steps article:before {
