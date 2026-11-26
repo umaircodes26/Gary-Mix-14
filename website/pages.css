@@ -17,9 +17,9 @@
 .enquiry-copy h2{margin:0 0 22px;font-size:46px;font-weight:700;letter-spacing:-1.8px;line-height:1.15;color:var(--ink)}
 .enquiry-copy p:not(.eyebrow){margin:0;color:#555;font-size:16px;line-height:2;max-width:520px}
 .contact-cards{padding:96px 0 110px}
-.contact-cards-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px;align-items:start}
-.contact-card{background:#fff;border:1px solid #e3e3e3;padding:46px 44px}
-.direct-card{align-self:start;height:fit-content;padding-bottom:36px}
+.contact-cards-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px;align-items:stretch}
+.contact-card{background:#fff;border:1px solid #e3e3e3;padding:46px 44px;display:flex;flex-direction:column}
+.direct-card{justify-content:space-between}
 .card-eyebrow{margin:0 0 12px;color:var(--red);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
 .contact-card h2{margin:0 0 28px;font-size:30px;font-weight:700;letter-spacing:-1.1px;line-height:1.2;color:var(--ink)}
 .contact-card h2.has-divider{padding-bottom:24px;margin-bottom:26px;border-bottom:1px solid #ececec}
@@ -32,6 +32,10 @@
 .direct-link{display:inline-flex;align-items:center;gap:6px;color:var(--red);font-size:13px;font-weight:700}
 .direct-link:hover{text-decoration:underline}
 .enquiry-form{display:grid;grid-template-columns:1fr 1fr;gap:22px 24px}
+.form-card .enquiry-form{max-height:285px;overflow-y:auto;padding-right:10px;scrollbar-width:thin;scrollbar-color:#d0d0d0 transparent}
+.form-card .enquiry-form::-webkit-scrollbar{width:6px}
+.form-card .enquiry-form::-webkit-scrollbar-thumb{background:#d0d0d0;border-radius:3px}
+.form-card .enquiry-form::-webkit-scrollbar-track{background:transparent}
 .form-field label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:8px}
 .form-field .req{color:var(--red)}
 .form-field-full{grid-column:1 / -1}
