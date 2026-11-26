@@ -1,0 +1,163 @@
+/* Shared Header & Topbar Styles */
+
+.topline {
+    height: 42px;
+    background: #2b2b2b;
+    color: #eee;
+    font-size: 12px;
+    letter-spacing: .02em
+}
+
+.top-inner,
+.top-contact {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.topline b {
+    color: var(--red);
+    font-weight: 500
+}
+
+.top-contact {
+    gap: 18px
+}
+
+.top-contact i {
+    font-style: normal;
+    color: var(--red);
+    font-size: 17px;
+    margin-right: 6px
+}
+
+.dot {
+    color: #777
+}
+
+.site-header,
+.shared-header {
+    height: 118px;
+    background: white;
+    position: relative;
+    z-index: 5
+}
+
+.nav-wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.brand {
+    display: inline-block;
+    line-height: 0
+}
+
+.brand img {
+    display: block;
+    width: 220px;
+    height: auto
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    color: #24483f;
+    font-weight: 500
+}
+
+.main-nav>a:not(.button):hover,
+.main-nav .active {
+    color: var(--red)
+}
+
+.main-nav .active:before {
+    content: "·";
+    padding-right: 7px
+}
+
+.nav-cta {
+    height: 54px;
+    padding-inline: 24px
+}
+
+.nav-cta .arrow-diag {
+    font-size: 16px
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    font-size: 26px;
+    cursor: pointer
+}
+
+.menu-toggle .fa-bars {
+    font-size: 26px;
+    color: #141414
+}
+
+@media(max-width:1050px) {
+    .main-nav {
+        gap: 20px
+    }
+    .nav-cta {
+        padding-inline: 14px
+    }
+}
+
+@media(max-width:760px) {
+    .topline {
+        height: auto;
+        min-height: 38px
+    }
+    .top-inner {
+        justify-content: center
+    }
+    .top-inner>span {
+        font-size: 9px
+    }
+    .top-contact {
+        display: none
+    }
+    .site-header {
+        height: 78px
+    }
+    .menu-toggle {
+        display: block
+    }
+    .brand img {
+        width: 175px
+    }
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 15px 20px #0002;
+        padding: 18px;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0
+    }
+    .main-nav.open {
+        display: flex
+    }
+    .main-nav>a:not(.button) {
+        padding: 11px 5px;
+        border-bottom: 1px solid #eee
+    }
+    .main-nav .active:before {
+        content: none
+    }
+    .main-nav .nav-cta {
+        margin-top: 12px
+    }
+}

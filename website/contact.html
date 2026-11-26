@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141414">
+  <title>Contact Us | Mix14</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="components/header.css">
+  <link rel="stylesheet" href="components/footer.css">
+  <link rel="stylesheet" href="icons/css/all.min.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body class="contact-page">
+  <div id="site-header"></div>
+  <main>
+    <section class="contact-banner">
+      <div>
+        <h1>Contact Us</h1>
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html#home">Home</a><span>•</span><b>Contact</b>
+        </nav>
+      </div>
+    </section>
+
+    <section class="contact-intro">
+      <div class="wrap contact-intro-grid">
+        <div class="contact-intro-image">
+          <img loading="lazy" decoding="async" src="images/Rectangle 33770 (1).png" alt="Mix14 laboratory engineer discussing test requirements">
+        </div>
+        <div class="contact-intro-body">
+          <p class="eyebrow"><span></span>GET IN TOUCH</p>
+          <h2>Let’s talk about your test.</h2>
+          <hr>
+          <p class="contact-intro-copy">Contact Mix14 about an upcoming test, a materials question or a product development challenge. The team can help identify the right next step.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-cards-section">
+      <div class="wrap contact-cards-grid">
+        <article class="contact-card">
+          <p class="contact-card-eyebrow">DIRECT CONTACT</p>
+          <h3>Speak with the team.</h3>
+          <div class="contact-detail-list">
+            <div class="contact-detail-row">
+              <span>EMAIL</span>
+              <a href="mailto:gary@mix14.co.uk">gary@mix14.co.uk</a>
+            </div>
+            <div class="contact-detail-row">
+              <span>TELEPHONE</span>
+              <a href="tel:+441865407587">+44 (0)1865 407587</a>
+            </div>
+            <div class="contact-detail-row">
+              <span>ADDRESS</span>
+              <p>Unit 112, Culham No. 1 Site Station Road,<br>Abingdon Oxfordshire OX14 3DA<br>United Kingdom</p>
+            </div>
+          </div>
+          <p class="contact-card-note">Please contact Mix14 to arrange a visit or witnessing appointment.</p>
+        </article>
+
+        <article class="contact-card contact-card-route">
+          <p class="contact-card-eyebrow">THE QUICKEST ROUTE</p>
+          <h3>Talk to an engineer.</h3>
+          <hr>
+          <p class="route-copy">For a technical enquiry or quote, share the standard, material, sample details and timing if available.</p>
+          <div class="route-cta-wrap">
+            <button type="button" class="button button-red" id="open-enquiry-btn" aria-expanded="false" aria-controls="enquiry-panel">OPEN ENQUIRY FORM <span><i class="fa-solid fa-arrow-right arrow-diag" aria-hidden="true"></i></span></button>
+          </div>
+          <form class="enquiry-form" id="enquiry-panel" hidden>
+            <div class="enquiry-fields">
+              <label>Your Name<input type="text" name="name" required placeholder="Full name"></label>
+              <label>Email Address<input type="email" name="email" required placeholder="you@company.com"></label>
+              <label class="full">Test Standard / Material<input type="text" name="standard" placeholder="e.g. FAR 25.853 Vertical Burn, Wire Burn, Heat Release"></label>
+              <label class="full">Project Details<textarea name="details" rows="3" required placeholder="Share sample details, quantity and timing if available"></textarea></label>
+            </div>
+            <button type="submit" class="button button-red">SEND ENQUIRY <span><i class="fa-solid fa-arrow-right arrow-diag" aria-hidden="true"></i></span></button>
+          </form>
+          <hr>
+          <p class="route-note">You can also email directly if you already have a brief or supporting documents.</p>
+          <a class="route-email-link" href="mailto:gary@mix14.co.uk">EMAIL MIX14 ABOUT A TEST <i class="fa-solid fa-arrow-right arrow-diag" aria-hidden="true"></i></a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="site.js"></script>
+  <script>
+    const enquiryBtn = document.getElementById('open-enquiry-btn');
+    const enquiryPanel = document.getElementById('enquiry-panel');
+    if (enquiryBtn && enquiryPanel) {
+      enquiryBtn.addEventListener('click', () => {
+        const isHidden = enquiryPanel.hasAttribute('hidden');
+        if (isHidden) {
+          enquiryPanel.removeAttribute('hidden');
+          enquiryBtn.setAttribute('aria-expanded', 'true');
+        } else {
+          enquiryPanel.setAttribute('hidden', '');
+          enquiryBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      enquiryPanel.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const data = new FormData(enquiryPanel);
+        const subject = encodeURIComponent(`Mix14 Test Enquiry - ${data.get('standard') || 'General'}`);
+        const body = encodeURIComponent(
+          `Name: ${data.get('name')}\nEmail: ${data.get('email')}\nStandard/Material: ${data.get('standard') || 'N/A'}\n\nDetails:\n${data.get('details')}`
+        );
+        window.location.href = `mailto:gary@mix14.co.uk?subject=${subject}&body=${body}`;
+      });
+    }
+  </script>
+</body>
+</html>
