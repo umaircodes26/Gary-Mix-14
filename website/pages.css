@@ -152,8 +152,8 @@
 .standards-section .section-heading{margin-bottom:46px}
 .standards-section .section-heading h2{font-size:38px}
 .standards-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:24px}
-.std-card{flex:0 0 calc((100% - 48px) / 3);background:#fff;border:1px solid #e7e7e7;padding:32px 30px 34px;display:flex;flex-direction:column}
-.std-card-featured{border-top:2px solid var(--red)}
+.std-card{flex:0 0 calc((100% - 48px) / 3);background:#fff;border:1px solid #e7e7e7;border-top:2px solid #e7e7e7;padding:32px 30px 34px;display:flex;flex-direction:column;transition:border-color .2s,transform .2s,box-shadow .2s}
+.std-card:hover,.std-card:focus-within{border-top-color:var(--red);transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.06)}
 .std-badge{background:#141414;color:#fff;padding:9px 16px;align-self:flex-start;margin-bottom:22px;display:flex;flex-direction:column;gap:2px}
 .std-badge span{font-size:9.5px;letter-spacing:.08em;color:#aaa;text-transform:uppercase}
 .std-badge strong{font-size:12.5px;font-weight:700;letter-spacing:.02em}
