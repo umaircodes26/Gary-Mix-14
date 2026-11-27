@@ -1,4 +1,4 @@
-﻿/* Wire burn detail page, matched to the supplied Mix14 reference. */
+/* Wire burn detail page, matched to the supplied Mix14 reference. */
 .testing-page.vertical-detail .detail-hero {
   min-height: 420px;
   display: grid;
@@ -34,7 +34,7 @@
 .testing-page.vertical-detail .detail-intro hr { margin: 42px 0 54px; }
 .testing-page.vertical-detail .detail-actions { display: flex; flex-wrap: wrap; gap: 20px; }
 .testing-page.vertical-detail .detail-intro .button,
-.testing-page.vertical-detail .detail-criteria .button { min-height: 60px; padding: 0 30px; display: inline-flex; justify-content: center; align-items: center; gap: 10px; text-decoration: none; text-transform: uppercase; font-size: 13px; font-weight: 700; }
+.testing-page.vertical-detail .detail-criteria .button { min-height: 60px; padding: 0 30px; display: inline-flex; justify-content: center; align-items: center; gap: 10px; text-decoration: none; text-transform: uppercase; font-family: 'Helvetica Now Display', 'Helvetica Local', Arial, sans-serif; font-size: 19px; font-weight: 700; }
 .testing-page.vertical-detail .button--primary { color: #fff; border: 1px solid #f62445; background: #f62445; }
 .testing-page.vertical-detail .detail-intro .button--primary:hover,
 .testing-page.vertical-detail .detail-intro .button--primary:focus-visible,

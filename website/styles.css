@@ -79,7 +79,8 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-size: 13px;
+    font-family: 'Helvetica Now Display', 'Helvetica Local', Arial, sans-serif;
+    font-size: 19px;
     font-weight: 700;
     line-height: 1.2;
     border: 1px solid transparent;
