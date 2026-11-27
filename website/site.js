@@ -77,8 +77,9 @@ const FOOTER_FALLBACK = `
 </footer>`;
 
 function ensureStylesheet(href) {
+  const baseHref = href.split('?')[0];
   const exists = [...document.querySelectorAll('link[rel="stylesheet"]')]
-    .some((link) => (link.getAttribute('href') || '').endsWith(href));
+    .some((link) => ((link.getAttribute('href') || '').split('?')[0]).endsWith(baseHref));
   if (exists) return;
   const link = document.createElement('link');
   link.rel = 'stylesheet';
@@ -198,8 +199,8 @@ function initLazySections() {
 }
 
 async function initSharedLayout() {
-  ensureStylesheet('components/header.css');
-  ensureStylesheet('components/footer.css');
+  ensureStylesheet('components/header.css?v=8');
+  ensureStylesheet('components/footer.css?v=8');
 
   let headerSlot = document.getElementById('site-header');
   if (!headerSlot && !document.querySelector('header.site-header')) {
