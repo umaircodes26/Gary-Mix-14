@@ -19,7 +19,7 @@ html {
 body {
     margin: 0;
     color: var(--ink);
-    font-family: 'Helvetica Now Display', 'Helvetica Local', Arial, sans-serif;
+    font-family: 'Helvetica Local', Arial, sans-serif;
     font-weight: 400;
     font-size: 19px;
     line-height: 1.75;
@@ -80,7 +80,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-family: 'Helvetica Now Display', 'Helvetica Local', Arial, sans-serif;
+    font-family: 'Helvetica Local', Arial, sans-serif;
     font-size: 19px;
     font-weight: 700;
     line-height: 1.2;
@@ -155,9 +155,9 @@ a {
 }
 
 .hero h1 {
-    font-size: 52px;
-    letter-spacing: -2.6px;
-    line-height: 1.19;
+    font-size: 60px;
+    letter-spacing: -2.4px;
+    line-height: 1.15;
     margin: 0 0 31px;
     font-weight: 700
 }
@@ -169,8 +169,9 @@ a {
 
 .hero-copy {
     color: #d0d0d0;
-    font-size: 15px;
-    line-height: 2.1;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.85;
     margin: 0 0 42px
 }
 
@@ -1004,14 +1005,22 @@ a {
     font-display: swap
 }
 
+@font-face {
+    font-family: 'Helvetica Local';
+    src: url('./fonts/Helvetica-BoldOblique.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap
+}
+
 body {
-    font-family: 'Helvetica Now Display', 'Helvetica Local', Arial, sans-serif;
+    font-family: 'Helvetica Local', Arial, sans-serif;
     font-weight: 400;
     font-size: 19px
 }
 
 .accordion button {
-    font-family: 'Helvetica Now Display', 'Helvetica Local', Arial, sans-serif
+    font-family: 'Helvetica Local', Arial, sans-serif
 }
 
 .gallery-grid button span .fa-plus {
