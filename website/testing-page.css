@@ -13,14 +13,14 @@
 .flame-intro-copy{padding:8px 0 0}
 .flame-intro-copy .eyebrow{margin-bottom:34px}
 .flame-intro-copy h2{font-size:48px;line-height:1.15;letter-spacing:-2px;margin:0 0 32px}
-.flame-intro-copy>p:not(.eyebrow){font-size:18px;line-height:2.1;color:#555;margin:0;max-width:600px}
+.flame-intro-copy>p:not(.eyebrow){font-size:19px;line-height:1.8;color:#555;margin:0;max-width:600px}
 .flame-intro-copy hr{border:0;border-top:1px solid #ddd;margin:42px 0 54px}
 .flame-intro-copy .button{height:60px;padding-inline:28px;font-size:19px}
 .test-selector{background:#f7f7f7;padding:110px 0 120px}
 .test-selector-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:55px}
 .test-selector-heading .eyebrow{margin:0 0 32px}
 .test-selector-heading h2{font-size:52px;line-height:1.1;letter-spacing:-2px;margin:0}
-.test-selector-heading>p{font-size:18px;line-height:2;color:#555;max-width:510px;margin:0 0 2px}
+.test-selector-heading>p{font-size:19px;line-height:1.8;color:#555;max-width:510px;margin:0 0 2px}
 .flame-test-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:64px;margin-top:72px}
 .flame-card{min-width:0;background:#fff;border:1px solid #e1e1e1;border-top:2px solid #e1e1e1;transition:border-color .2s,transform .25s,box-shadow .25s}
 .flame-card:hover{border-top-color:var(--red);transform:translateY(-8px);box-shadow:0 18px 40px rgba(0,0,0,.1)}
@@ -29,9 +29,9 @@
 .flame-card-image img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s}
 .flame-card:hover .flame-card-image img{transform:scale(1.035)}
 .flame-card-image>span{position:absolute;left:31px;bottom:0;color:rgba(255,255,255,.62);font-size:82px;font-weight:500;line-height:1;letter-spacing:-5px}
-.flame-card-copy{padding:30px 39px 34px;min-height:330px;display:flex;flex-direction:column;align-items:flex-start}
-.flame-card-copy h3{font-size:23px;line-height:1.5;letter-spacing:-.5px;margin:0 0 25px}
-.flame-card-copy p{font-size:16px;line-height:2;color:#555;margin:0 0 32px}
+.flame-card-copy{padding:32px 34px 36px;min-height:330px;display:flex;flex-direction:column;align-items:flex-start}
+.flame-card-copy h3{font-size:23px;line-height:1.45;letter-spacing:-.5px;margin:0 0 20px}
+.flame-card-copy p{font-size:19px;line-height:1.7;color:#555;margin:0 0 28px}
 .flame-card-link{margin-top:auto;color:var(--red);font-size:14px;font-weight:700;letter-spacing:.01em}
 .flame-card-link i{margin-left:9px;font-size:14px}
 @media(max-width:1200px){.flame-intro-grid{grid-template-columns:1fr 1fr;gap:42px}.flame-feature-image{height:410px}.flame-test-grid{gap:28px}.flame-card-copy{padding:26px 25px 30px}}

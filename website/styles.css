@@ -19,10 +19,10 @@ html {
 body {
     margin: 0;
     color: var(--ink);
-    font-family: 'Helvetica Local', Arial, sans-serif;
+    font-family: 'Helvetica Local';
     font-weight: 400;
     font-size: 19px;
-    line-height: 1.75;
+    line-height: 1.7;
     overflow-x: clip
 }
 
@@ -80,7 +80,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-family: 'Helvetica Local', Arial, sans-serif;
+    font-family: 'Helvetica Local';
     font-size: 19px;
     font-weight: 700;
     line-height: 1.2;
@@ -312,11 +312,11 @@ a {
 }
 
 .section-heading>p {
-    max-width: 380px;
+    max-width: 440px;
     color: #555;
     margin: 0;
-    font-size: 15px;
-    line-height: 2
+    font-size: 19px;
+    line-height: 1.75
 }
 
 .service-grid {
@@ -362,7 +362,7 @@ a {
 }
 
 .card-body {
-    padding: 24px 29px 27px
+    padding: 28px 30px 30px
 }
 
 .card-body h3 {
@@ -373,11 +373,11 @@ a {
 }
 
 .card-body p {
-    font-size: 14px;
-    line-height: 2;
+    font-size: 19px;
+    line-height: 1.7;
     color: #555;
-    min-height: 84px;
-    margin: 0 0 19px
+    min-height: 0;
+    margin: 0 0 22px
 }
 
 .card-body>a {
@@ -614,8 +614,8 @@ a {
 
 .steps article>span {
     color: #555;
-    font-size: 14px;
-    line-height: 1.9
+    font-size: 19px;
+    line-height: 1.7
 }
 
 .gallery {
@@ -724,10 +724,10 @@ a {
 .accordion article>p {
     display: none;
     color: #666;
-    line-height: 1.9;
+    line-height: 1.75;
     margin: 0;
     padding: 0 28px 21px 0;
-    font-size: 14px
+    font-size: 19px
 }
 
 .accordion article.open>p {
@@ -1014,13 +1014,13 @@ a {
 }
 
 body {
-    font-family: 'Helvetica Local', Arial, sans-serif;
+    font-family: 'Helvetica Local';
     font-weight: 400;
     font-size: 19px
 }
 
 .accordion button {
-    font-family: 'Helvetica Local', Arial, sans-serif
+    font-family: 'Helvetica Local'
 }
 
 .gallery-grid button span .fa-plus {

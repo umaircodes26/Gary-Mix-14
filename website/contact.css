@@ -174,15 +174,15 @@
 
 .contact-detail-row p {
     margin: 0;
-    font-size: 13px;
-    line-height: 1.75;
+    font-size: 19px;
+    line-height: 1.65;
     color: #333
 }
 
 .contact-card-note {
     margin: 22px 0 0;
-    font-size: 12px;
-    line-height: 1.7;
+    font-size: 19px;
+    line-height: 1.65;
     color: #666
 }
 
@@ -195,8 +195,8 @@
 
 .route-copy {
     margin: 0 0 28px;
-    font-size: 14px;
-    line-height: 1.9;
+    font-size: 19px;
+    line-height: 1.7;
     color: #555;
     max-width: 440px
 }
@@ -257,8 +257,8 @@
 
 .route-note {
     margin: 0 0 14px;
-    font-size: 12px;
-    line-height: 1.7;
+    font-size: 19px;
+    line-height: 1.65;
     color: #666
 }
 

@@ -13,14 +13,14 @@
 .criteria-heading h2{font-size:40px;line-height:1.2;letter-spacing:-1.5px;margin:0 0 38px}
 .criteria-heading>i{font-size:48px;color:#c9c9c9;margin:8px 4px 0 0}
 .criteria-heading>.criteria-icon{width:74px;height:auto;opacity:.25;margin:4px 2px 0 0}
-.criteria-card>p{position:relative;z-index:1;font-size:17px;line-height:2;color:#555;margin:0 0 28px;max-width:620px}
+.criteria-card>p{position:relative;z-index:1;font-size:19px;line-height:1.75;color:#555;margin:0 0 28px;max-width:620px}
 .criteria-card hr{position:relative;z-index:1;border:0;border-top:1px solid #ddd;width:100%;margin:auto 0 18px}
 .criteria-card small{position:relative;z-index:1;font-size:14px;color:#555}
 .sample-card .criteria-heading h2{margin-top:97px;line-height:1.35}
 .criteria-card:not(.sample-card) .criteria-heading h2{margin-bottom:29px}
 .sample-card .criteria-watermark{position:absolute;right:47px;top:38px;width:250px;height:auto;opacity:.17}
 .criteria-card ul{position:relative;z-index:1;list-style:none;padding:0;margin:-3px 0 22px;display:grid;gap:18px}
-.criteria-card li{display:flex;align-items:flex-start;gap:19px;font-size:16px;line-height:1.5;color:#444}
+.criteria-card li{display:flex;align-items:flex-start;gap:19px;font-size:19px;line-height:1.65;color:#444}
 .criteria-card li i{color:var(--red);font-size:20px;margin-top:1px}
 .burn-criteria .center{margin-top:64px}
 .burn-criteria .center .button{min-width:300px;height:60px}
