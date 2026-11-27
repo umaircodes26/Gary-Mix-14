@@ -40,7 +40,7 @@
 .form-field label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:8px}
 .form-field .req{color:var(--red)}
 .form-field-full{grid-column:1 / -1}
-.form-field input,.form-field select,.form-field textarea{width:100%;height:48px;padding:0 14px;border:1px solid #e5e5e5;background:#fcfcfc;color:var(--ink);font:400 14px 'Helvetica Local',Arial,sans-serif;outline:none;transition:border-color .15s}
+.form-field input,.form-field select,.form-field textarea{width:100%;height:48px;padding:0 14px;border:1px solid #e5e5e5;background:#fcfcfc;color:var(--ink);font:400 14px 'Helvetica Now Display','Helvetica Local',Arial,sans-serif;outline:none;transition:border-color .15s}
 .form-field textarea{height:auto;min-height:118px;padding:14px;resize:vertical;line-height:1.6}
 .form-field input::placeholder,.form-field textarea::placeholder{color:#b0b0b0}
 .form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--red);background:#fff}

@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --red: #f52245;
     --ink: #141414;
     --green: #164d43;
@@ -19,8 +19,9 @@ html {
 body {
     margin: 0;
     color: var(--ink);
-    font-family: 'Helvetica Local', Arial, sans-serif;
-    font-size: 15px;
+    font-family: 'Helvetica Now Display', 'Helvetica Local', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 19px;
     line-height: 1.75
 }
 
@@ -998,11 +999,13 @@ a {
 }
 
 body {
-    font-family: 'Helvetica Local', Arial, sans-serif
+    font-family: 'Helvetica Now Display', 'Helvetica Local', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 19px
 }
 
 .accordion button {
-    font-family: 'Helvetica Local', Arial, sans-serif
+    font-family: 'Helvetica Now Display', 'Helvetica Local', Arial, sans-serif
 }
 
 .gallery-grid button span .fa-plus {
