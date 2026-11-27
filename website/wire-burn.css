@@ -8,7 +8,7 @@
   background: linear-gradient(rgba(10, 12, 14, .73), rgba(10, 12, 14, .73)), url("images/Rectangle 33761.png") center 48% / cover no-repeat;
 }
 .testing-page.vertical-detail .detail-hero__content { padding: 50px 24px; }
-.testing-page.vertical-detail .detail-hero h1 { margin: 0 0 24px; font-size: clamp(38px, 3.35vw, 64px); line-height: 1.08; letter-spacing: -.045em; }
+.testing-page.vertical-detail .detail-hero h1 { margin: 0 0 24px; font-size: 60px; line-height: 1.1; letter-spacing: -2px; }
 .testing-page.vertical-detail .detail-hero p { display: flex; justify-content: center; align-items: center; gap: 14px; margin: 0; font-size: 21px; }
 .testing-page.vertical-detail .detail-hero p a { color: #fff; text-decoration: none; }
 .testing-page.vertical-detail .detail-hero p span,
@@ -28,7 +28,7 @@
 .testing-page.vertical-detail .detail-eyebrow::before { content: ""; width: 20px; height: 1px; display: inline-block; margin: 0 14px 5px 0; background: #f62445; }
 .testing-page.vertical-detail .detail-intro h2 { margin: 35px 0 32px; color: #171717; font-size: clamp(36px, 2.8vw, 50px); line-height: 1.12; letter-spacing: -.045em; }
 .testing-page.vertical-detail .detail-intro h3 { margin: 0 0 36px; color: #444; font-size: 18px; line-height: 1.5; }
-.testing-page.vertical-detail .detail-intro__content > p { max-width: 500px; margin: 0; color: #484848; font-size: 18px; line-height: 2.1; }
+.testing-page.vertical-detail .detail-intro__content > p { max-width: 500px; margin: 0; color: #484848; font-size: 19px; line-height: 1.95; }
 .testing-page.vertical-detail .detail-intro hr,
 .testing-page.vertical-detail .criteria-card hr { border: 0; border-top: 1px solid #dedede; }
 .testing-page.vertical-detail .detail-intro hr { margin: 42px 0 54px; }
@@ -64,6 +64,9 @@
   .testing-page.vertical-detail .detail-intro__image img { height: clamp(280px, 60vw, 470px); }
   .testing-page.vertical-detail .criteria-grid { grid-template-columns: 1fr; }
   .testing-page.vertical-detail .criteria-card { min-height: 400px; }
+}
+@media (max-width: 760px) {
+  .testing-page.vertical-detail .detail-hero h1 { font-size: 42px; letter-spacing: -1.5px; }
 }
 @media (max-width: 560px) {
   .testing-page.vertical-detail .detail-hero p { flex-wrap: wrap; font-size: 16px; }
