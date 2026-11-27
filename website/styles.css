@@ -510,34 +510,41 @@ a {
 }
 
 .why h2 {
-    font-size: 39px;
+    font-size: 42px;
     margin-bottom: 25px
 }
 
 .why-content>p:not(.eyebrow) {
     color: #555;
-    line-height: 2;
-    margin: 0 0 26px
+    font-size: 19px;
+    line-height: 1.75;
+    margin: 0 0 28px
 }
 
 .benefits {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px 20px;
-    font-size: 13px
+    gap: 14px 24px;
+    font-size: 16px
+}
+
+.benefits span {
+    display: flex;
+    align-items: center
 }
 
 .benefits b {
     display: inline-flex;
-    width: 20px;
-    height: 20px;
+    flex: none;
+    width: 22px;
+    height: 22px;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
     background: #26c34a;
     color: white;
-    margin-right: 8px;
-    font-size: 14px
+    margin-right: 10px;
+    font-size: 12px
 }
 
 .certifications {
@@ -546,19 +553,20 @@ a {
     padding-top: 30px;
     display: flex;
     align-items: center;
-    gap: 9px
+    gap: 12px;
+    flex-wrap: wrap
 }
 
 .certifications span {
     border: 1px solid #555;
-    padding: 9px 18px;
-    font-size: 12px
+    padding: 10px 20px;
+    font-size: 14px
 }
 
 .certifications small {
-    margin-left: 12px;
+    margin-left: 8px;
     color: #888;
-    font-size: 12px
+    font-size: 14px
 }
 
 .approach {
