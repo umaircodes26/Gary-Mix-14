@@ -1,4 +1,4 @@
-.testing-page main > section:not(.contact-band) .wrap{width:min(1490px,calc(100% - 64px))}
+.testing-page main > section:not(.contact-band) .wrap{width:min(1490px,calc(100% - 48px))}
 .testing-page .flame-banner{height:420px;display:grid;place-items:center;text-align:center;color:#fff;background:linear-gradient(rgba(16,18,20,.67),rgba(16,18,20,.67)),url('images/Rectangle 33761.png') center 55%/cover no-repeat}
 .flame-banner h1{font-size:60px;line-height:1.1;letter-spacing:-2px;margin:0 0 22px}
 .breadcrumbs{display:flex;justify-content:center;align-items:center;gap:14px;font-size:21px}

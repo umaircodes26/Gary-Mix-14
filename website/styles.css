@@ -5,7 +5,7 @@
     --muted: #f7f7f7;
     --text: #666;
     --line: #dedede;
-    --max: 1320px
+    --max: 1490px
 }
 
 * {
@@ -32,7 +32,7 @@ a {
 }
 
 .wrap {
-    width: min(var(--max), calc(100% - 64px));
+    width: min(var(--max), calc(100% - 48px));
     margin-inline: auto
 }
 

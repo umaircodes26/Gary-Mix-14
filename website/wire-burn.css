@@ -15,7 +15,7 @@
 .testing-page.vertical-detail .detail-hero p strong { color: #f62445; }
 .testing-page.vertical-detail .detail-hero p strong { font-weight: 400; }
 .testing-page.vertical-detail .detail-intro {
-  width: min(1360px, calc(100% - 64px));
+  width: min(1490px, calc(100% - 48px));
   margin: 0 auto;
   padding: 120px 0 126px;
   display: grid;
@@ -43,7 +43,7 @@
 .testing-page.vertical-detail .detail-intro .button--outline { color: #171717; border: 1px solid #171717; background: transparent; }
 .testing-page.vertical-detail .detail-intro .button--outline:hover,
 .testing-page.vertical-detail .detail-intro .button--outline:focus-visible { color: #fff; border-color: #f62445; background: #f62445; }
-.testing-page.vertical-detail .detail-criteria { padding: 120px 32px 128px; background: #f7f7f7; }
+.testing-page.vertical-detail .detail-criteria { padding: 120px 24px 128px; background: #f7f7f7; }
 .testing-page.vertical-detail .criteria-grid { width: min(1490px, 100%); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 .testing-page.vertical-detail .criteria-card { min-height: 472px; padding: 42px 50px; position: relative; border: 1px solid #e2e2e2; border-top: 2px solid #e2e2e2; background: #fff; display: flex; flex-direction: column; transition: border-color .2s, transform .2s, box-shadow .2s; }
 .testing-page.vertical-detail .criteria-card:hover { border-top-color: #f62445; transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0, 0, 0, .06); }
