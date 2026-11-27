@@ -696,7 +696,7 @@ a {
 }
 
 .faqs {
-    padding: 94px 0 90px
+    padding: 110px 0
 }
 
 .faq-grid {
@@ -706,14 +706,16 @@ a {
 }
 
 .faqs h2 {
-    font-size: 39px;
-    margin: 0 0 28px
+    font-size: 50px;
+    font-weight: 700;
+    margin: 22px 0 28px
 }
 
 .faq-grid>div:first-child>p:not(.eyebrow) {
     color: #666;
-    line-height: 1.9;
-    margin: 0 0 30px
+    font-size: 19px;
+    line-height: 1.8;
+    margin: 0 0 32px
 }
 
 .accordion article {
@@ -725,11 +727,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 0;
+    padding: 22px 0;
     background: none;
     border: 0;
     text-align: left;
-    font: 600 14px 'Helvetica Local', Arial, sans-serif;
+    font: 600 19px 'Helvetica Local';
     cursor: pointer
 }
 
@@ -752,7 +754,7 @@ a {
 }
 
 .client-logos {
-    padding: 36px 0;
+    padding: 54px 0;
     background: white
 }
 
