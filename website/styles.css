@@ -19,7 +19,7 @@ html {
 body {
     margin: 0;
     color: var(--ink);
-    font-family: 'Helvetica Local';
+    font-family: 'Helvetica Now Display';
     font-weight: 400;
     font-size: 19px;
     line-height: 1.7;
@@ -80,8 +80,8 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-family: 'Helvetica Local';
-    font-size: 19px;
+    font-family: 'Helvetica Now Display';
+    font-size: 17px;
     font-weight: 700;
     line-height: 1.2;
     border: 1px solid transparent;
@@ -155,8 +155,8 @@ a {
 }
 
 .hero h1 {
-    font-size: 60px;
-    letter-spacing: -2.4px;
+    font-size: 50px;
+    letter-spacing: -2px;
     line-height: 1.15;
     margin: 0 0 31px;
     font-weight: 700
@@ -731,7 +731,7 @@ a {
     background: none;
     border: 0;
     text-align: left;
-    font: 600 19px 'Helvetica Local';
+    font: 500 17px 'Helvetica Now Display';
     cursor: pointer
 }
 
@@ -993,53 +993,55 @@ a {
 }
 
 @font-face {
-    font-family: 'Helvetica Local';
-    src: url('./fonts/Helvetica.ttf') format('truetype');
+    font-family: 'Helvetica Now Display';
+    src: local('Helvetica Now Display'), url('./fonts/Helvetica.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
     font-display: swap
 }
 
 @font-face {
-    font-family: 'Helvetica Local';
-    src: url('./fonts/helvetica-light-587ebe5a59211.ttf') format('truetype');
+    font-family: 'Helvetica Now Display';
+    src: local('Helvetica Now Display Medium'), url('./fonts/Helvetica.ttf') format('truetype');
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     font-display: swap
 }
 
 @font-face {
-    font-family: 'Helvetica Local';
-    src: url('./fonts/Helvetica-Bold.ttf') format('truetype');
+    font-family: 'Helvetica Now Display';
+    src: local('Helvetica Now Display Bold'), url('./fonts/Helvetica-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: 700;
     font-display: swap
 }
 
 @font-face {
-    font-family: 'Helvetica Local';
-    src: url('./fonts/Helvetica-Oblique.ttf') format('truetype');
+    font-family: 'Helvetica Now Display';
+    src: local('Helvetica Now Display Italic'), url('./fonts/Helvetica-Oblique.ttf') format('truetype');
     font-style: italic;
     font-weight: 400;
     font-display: swap
 }
 
 @font-face {
-    font-family: 'Helvetica Local';
-    src: url('./fonts/Helvetica-BoldOblique.ttf') format('truetype');
+    font-family: 'Helvetica Now Display';
+    src: local('Helvetica Now Display Bold Italic'), url('./fonts/Helvetica-BoldOblique.ttf') format('truetype');
     font-style: italic;
     font-weight: 700;
     font-display: swap
 }
 
 body {
-    font-family: 'Helvetica Local';
+    font-family: 'Helvetica Now Display';
     font-weight: 400;
     font-size: 19px
 }
 
 .accordion button {
-    font-family: 'Helvetica Local'
+    font-family: 'Helvetica Now Display';
+    font-weight: 500;
+    font-size: 17px
 }
 
 .gallery-grid button span .fa-plus {

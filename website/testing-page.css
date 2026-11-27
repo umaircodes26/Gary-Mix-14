@@ -1,6 +1,6 @@
 .testing-page main > section:not(.contact-band) .wrap{width:min(1490px,calc(100% - 48px))}
 .testing-page .flame-banner{height:420px;display:grid;place-items:center;text-align:center;color:#fff;background:linear-gradient(rgba(16,18,20,.67),rgba(16,18,20,.67)),url('images/Rectangle 33761.png') center 55%/cover no-repeat}
-.flame-banner h1{font-size:60px;line-height:1.1;letter-spacing:-2px;margin:0 0 22px}
+.flame-banner h1{font-size:50px;font-weight:700;line-height:1.1;letter-spacing:-2px;margin:0 0 22px}
 .breadcrumbs{display:flex;justify-content:center;align-items:center;gap:14px;font-size:21px}
 .breadcrumbs a{color:#fff}.breadcrumbs span,.breadcrumbs b{color:var(--red)}.breadcrumbs b{font-weight:500}
 .flame-intro{padding:120px 0}
@@ -15,7 +15,7 @@
 .flame-intro-copy h2{font-size:50px;font-weight:700;line-height:1.15;letter-spacing:-2px;margin:0 0 32px}
 .flame-intro-copy>p:not(.eyebrow){font-size:19px;line-height:1.8;color:#555;margin:0;max-width:600px}
 .flame-intro-copy hr{border:0;border-top:1px solid #ddd;margin:42px 0 54px}
-.flame-intro-copy .button{height:60px;padding-inline:28px;font-size:19px}
+.flame-intro-copy .button{height:60px;padding-inline:28px;font-size:17px}
 .test-selector{background:#f7f7f7;padding:110px 0 120px}
 .test-selector-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:55px}
 .test-selector-heading .eyebrow{margin:0 0 32px}

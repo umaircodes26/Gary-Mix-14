@@ -4,7 +4,7 @@
 .page-banner{position:relative;height:420px;background:#141618;color:#fff;overflow:hidden;display:flex;align-items:center}
 .page-banner-bg{position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,18,20,.67),rgba(16,18,20,.67)),url('images/Rectangle 33761.png') center 55%/cover no-repeat}
 .page-banner-content{position:relative;text-align:center}
-.page-banner-content h1{margin:0 0 22px;font-size:60px;font-weight:700;letter-spacing:-2px;line-height:1.1}
+.page-banner-content h1{margin:0 0 22px;font-size:50px;font-weight:700;letter-spacing:-2px;line-height:1.1}
 .breadcrumb{display:inline-flex;align-items:center;gap:14px;font-size:21px;font-weight:500}
 .breadcrumb a{color:#fff}
 .breadcrumb a:hover{color:var(--red)}
@@ -40,7 +40,7 @@
 .form-field label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:8px}
 .form-field .req{color:var(--red)}
 .form-field-full{grid-column:1 / -1}
-.form-field input,.form-field select,.form-field textarea{width:100%;height:48px;padding:0 14px;border:1px solid #e5e5e5;background:#fcfcfc;color:var(--ink);font:400 16px 'Helvetica Local';outline:none;transition:border-color .15s}
+.form-field input,.form-field select,.form-field textarea{width:100%;height:48px;padding:0 14px;border:1px solid #e5e5e5;background:#fcfcfc;color:var(--ink);font:500 17px 'Helvetica Now Display';outline:none;transition:border-color .15s}
 .form-field textarea{height:auto;min-height:118px;padding:14px;resize:vertical;line-height:1.6}
 .form-field input::placeholder,.form-field textarea::placeholder{color:#b0b0b0}
 .form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--red);background:#fff}
