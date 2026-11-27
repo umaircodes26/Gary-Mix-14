@@ -66,7 +66,10 @@
   .testing-page.vertical-detail .criteria-card { min-height: 400px; }
 }
 @media (max-width: 760px) {
-  .testing-page.vertical-detail .detail-hero h1 { font-size: 42px; letter-spacing: -1.5px; }
+  .testing-page.vertical-detail .detail-hero h1 { font-size: clamp(30px, 7vw, 42px); letter-spacing: -1.5px; }
+  .testing-page.vertical-detail .detail-intro__content > p { font-size: 16px; line-height: 1.85; }
+  .testing-page.vertical-detail .detail-intro .button,
+  .testing-page.vertical-detail .detail-criteria .button { min-height: 52px; padding: 0 20px; font-size: 15px; }
 }
 @media (max-width: 560px) {
   .testing-page.vertical-detail .detail-hero p { flex-wrap: wrap; font-size: 16px; }

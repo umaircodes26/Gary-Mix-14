@@ -22,7 +22,8 @@ body {
     font-family: 'Helvetica Now Display', 'Helvetica Local', Arial, sans-serif;
     font-weight: 400;
     font-size: 19px;
-    line-height: 1.75
+    line-height: 1.75;
+    overflow-x: clip
 }
 
 a {
@@ -951,10 +952,13 @@ a {
     }
 }
 
-@media(max-width:420px) {
+@media(max-width:480px) {
     .button {
-        padding-inline: 15px;
-        font-size: 12px
+        padding-inline: 16px;
+        min-height: 48px;
+        font-size: 15px;
+        white-space: normal;
+        text-align: center
     }
     .hero-actions .button {
         width: 100%
