@@ -14,14 +14,14 @@
 .enquiry-intro-grid{display:grid;grid-template-columns:minmax(0,560px) minmax(0,1fr);gap:60px;align-items:center}
 .enquiry-photo img{display:block;width:100%;height:410px;object-fit:cover}
 .enquiry-copy .eyebrow{margin:0 0 24px}
-.enquiry-copy h2{margin:0 0 22px;font-size:46px;font-weight:700;letter-spacing:-1.8px;line-height:1.15;color:var(--ink)}
+.enquiry-copy h2{margin:0 0 22px;font-size:50px;font-weight:700;letter-spacing:-1.8px;line-height:1.15;color:var(--ink)}
 .enquiry-copy p:not(.eyebrow){margin:0;color:#555;font-size:19px;line-height:1.85;max-width:520px}
 .contact-cards{padding:96px 0 110px}
 .contact-cards-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px;align-items:stretch}
 .contact-card{background:#fff;border:1px solid #e3e3e3;border-top:2px solid #e3e3e3;padding:46px 44px;display:flex;flex-direction:column;transition:border-color .2s,box-shadow .2s}
 .contact-card:hover,.contact-card:focus-within{border-top-color:var(--red);box-shadow:0 12px 28px rgba(0,0,0,.06)}
 .direct-card{justify-content:space-between}
-.card-eyebrow{margin:0 0 12px;color:var(--red);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.card-eyebrow{margin:0 0 12px;color:var(--red);font-size:16px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
 .contact-card h2{margin:0 0 28px;font-size:30px;font-weight:700;letter-spacing:-1.1px;line-height:1.2;color:var(--ink)}
 .contact-card h2.has-divider{padding-bottom:24px;margin-bottom:26px;border-bottom:1px solid #ececec}
 .direct-item{padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid #ececec}
@@ -70,7 +70,7 @@
 
 .faq-page-section{padding:88px 0 96px}
 .faq-page-header{text-align:center;margin-bottom:38px}
-.faq-page-header h2{margin:0;font-size:34px;font-weight:700;letter-spacing:-1.2px;color:var(--ink)}
+.faq-page-header h2{margin:0;font-size:50px;font-weight:700;letter-spacing:-1.2px;color:var(--ink)}
 .faq-cards{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
 .faq-cards article{background:#fff;border:1px solid #e7e7e7;padding:0 26px}
 .faq-cards button{padding:22px 0;font-size:19px}
@@ -80,7 +80,7 @@
 
 .process-section{padding:92px 0 98px}
 .process-section .section-heading{margin-bottom:46px}
-.process-section .section-heading h2{font-size:42px}
+.process-section .section-heading h2{font-size:50px}
 .process-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:stretch}
 .stage-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .stage-card{background:#fff;border:1px solid #e7e7e7;border-top:2px solid #e7e7e7;padding:24px 26px 28px;display:flex;flex-direction:column;transition:background .2s,border-color .2s,transform .2s,box-shadow .2s}
@@ -98,7 +98,7 @@
 .process-photo img{width:100%;height:100%;object-fit:cover;display:block}
 .brief-section{background:#141414;color:#fff;padding:88px 0 96px}
 .brief-section .section-heading{margin-bottom:54px}
-.brief-section .section-heading h2{color:#fff;font-size:42px}
+.brief-section .section-heading h2{color:#fff;font-size:50px}
 .brief-section .section-heading>p{color:#a8a8a8}
 .brief-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:36px}
 .brief-steps article{border-top:1px solid #2b2b2b;padding-top:26px;position:relative}
@@ -111,7 +111,7 @@
 
 .patented-section{padding:90px 0 96px}
 .patented-section .section-heading{margin-bottom:42px}
-.patented-section .section-heading h2{font-size:42px}
+.patented-section .section-heading h2{font-size:50px}
 .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .product-card{background:#fff;border:1px solid #e7e7e7;border-top:2px solid #e7e7e7;padding:24px;display:flex;flex-direction:column;transition:border-color .2s,transform .2s,box-shadow .2s}
 .product-card:hover{border-top-color:var(--red);transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.06)}
@@ -123,7 +123,7 @@
 .dragon-section{background:#fff;padding:92px 0}
 .dragon-grid{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:center}
 .dragon-copy .eyebrow{margin:0 0 16px}
-.dragon-copy h2{margin:0 0 20px;font-size:38px;font-weight:700;letter-spacing:-1.5px;line-height:1.15;color:var(--ink)}
+.dragon-copy h2{margin:0 0 20px;font-size:50px;font-weight:700;letter-spacing:-1.5px;line-height:1.15;color:var(--ink)}
 .dragon-copy p:not(.eyebrow):not(.dragon-note){margin:0 0 22px;color:#666;font-size:19px;line-height:1.7;max-width:460px}
 .dragon-note{margin:0;color:#999;font-size:12px}
 .video-card{position:relative;overflow:hidden;background:#141414}
@@ -135,7 +135,7 @@
 .video-overlay p{margin:0;color:#ccc;font-size:11.5px}
 .lifecycle-header{max-width:650px;margin-bottom:54px}
 .lifecycle-header .eyebrow{margin:0 0 18px}
-.lifecycle-header h2{margin:0 0 18px;font-size:38px;font-weight:700;letter-spacing:-1.5px;line-height:1.18;color:#fff}
+.lifecycle-header h2{margin:0 0 18px;font-size:50px;font-weight:700;letter-spacing:-1.5px;line-height:1.18;color:#fff}
 .lifecycle-intro{margin:0;color:#a8a8a8;font-size:19px;line-height:1.7}
 .lifecycle-quote{max-width:720px;margin:52px auto 0;background:#202020;border-left:3px solid var(--red);padding:24px 30px;color:#e5e5e5;font-size:19px;line-height:1.7}
 @media(max-width:960px){.product-grid{grid-template-columns:1fr}.dragon-grid{grid-template-columns:1fr;gap:36px}}
@@ -153,7 +153,7 @@
 .org-box span{font-size:11.5px;color:#777}
 .standards-section{padding:92px 0 96px}
 .standards-section .section-heading{margin-bottom:46px}
-.standards-section .section-heading h2{font-size:42px}
+.standards-section .section-heading h2{font-size:50px}
 .standards-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:24px}
 .std-card{flex:0 0 calc((100% - 48px) / 3);background:#fff;border:1px solid #e7e7e7;border-top:2px solid #e7e7e7;padding:32px 30px 34px;display:flex;flex-direction:column;transition:border-color .2s,transform .2s,box-shadow .2s}
 .std-card:hover,.std-card:focus-within{border-top-color:var(--red);transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.06)}
